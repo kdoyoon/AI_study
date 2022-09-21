@@ -23,7 +23,7 @@
   > <img width="200" alt="image" src="https://user-images.githubusercontent.com/93971443/191454768-f2fb0298-8a4e-4260-8a36-870984d34f3b.png">
 
   - L2-norm : 유클리드 거리 계산
-  > <img width="200" alt="image" src="https://user-images.githubusercontent.com/93971443/191454500-d0d3603f-c172-4055-a53b-271a047f7b0e.png">
+  > <img width="230" alt="image" src="https://user-images.githubusercontent.com/93971443/191454500-d0d3603f-c172-4055-a53b-271a047f7b0e.png">
   > <img width="200" alt="image" src="https://user-images.githubusercontent.com/93971443/191454787-d3e8ef93-4422-4f80-9382-2a3f030b961e.png">
 * norm에 따라 기하하적 성질에 차이가 발생하여 머신 러닝 목적에 맞게 사용
  (ex. L1 : 로버스트 회귀, 라쏘 회귀에서 사용 / ㅣL2 : 라플라스 근사, 릿지 회귀)
@@ -37,4 +37,5 @@
 * 더 쉬운 계산을 위한 내적 사용
   - 내적 : 정사영된 벡터의 길이
     * 정사영의 길이는 ||X||cosΘ이고, 이를 ||y||만큼 조정하면 내적을 구할 수 있다.
+<img width="300" alt="image" src="https://user-images.githubusercontent.com/93971443/191460404-1ed72fbb-345e-4255-a940-7e2c554ec2a1.png">
 
