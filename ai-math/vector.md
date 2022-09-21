@@ -32,7 +32,7 @@
 
 ## 두 벡터 사이의 각도
 * 제 2 코사인 법칙 사용(L2-norm 활용)
-<img width="365" alt="image" src="https://user-images.githubusercontent.com/93971443/191457605-f15db710-6b97-4a53-9dc8-c74d2bdfda32.png">
+<img width="420" alt="image" src="https://user-images.githubusercontent.com/93971443/191457605-f15db710-6b97-4a53-9dc8-c74d2bdfda32.png">
 
 * 더 쉬운 계산을 위한 내적 사용
   - 내적 : 정사영된 벡터의 길이
