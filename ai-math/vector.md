@@ -11,7 +11,7 @@
 ## Vector 연산
 * 같은 크기의 벡터끼리 +, - 성분곱(Hadamard Product) 연산 가능
 * 벡터의 덧셈, 뺄셈 : 상대적 위치 이동을 나타냄
-> <img width="103" alt="image" src="https://user-images.githubusercontent.com/93971443/191453891-23b54887-30dd-49a2-8895-9f5ad7d60e25.png">
+> <img width="200" alt="image" src="https://user-images.githubusercontent.com/93971443/191453891-23b54887-30dd-49a2-8895-9f5ad7d60e25.png">
 
 * * *
 
