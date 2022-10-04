@@ -19,6 +19,7 @@
 
 - neural network를 여러 층 쌓는 것을 말함
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/93971443/193743914-616632f9-0ecc-498f-9f16-4966e3892f84.png">
+
 - 비선형 함수를 추가함으로써 표현할 수 있는 범위가 늘어난다.
 - activation function(non-linear)
 <img width="762" alt="image" src="https://user-images.githubusercontent.com/93971443/193744198-1a0fe650-40cf-429b-b4f0-d514a440304f.png">
