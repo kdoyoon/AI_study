@@ -10,7 +10,7 @@
 
 ### Linear Neural Networks
 
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/93971443/193743241-f05d5732-39e7-4a7b-ae74-3954b8820e17.png">
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/93971443/193743241-f05d5732-39e7-4a7b-ae74-3954b8820e17.png">
 - loss 값을 최소로 하기 위해서 최적의 w ,b를 구해야 함
 - w, b에 대해 편미분 진행, gradient descent를 반복
 
@@ -24,7 +24,7 @@
 - activation function(non-linear)
 <img width="762" alt="image" src="https://user-images.githubusercontent.com/93971443/193744198-1a0fe650-40cf-429b-b4f0-d514a440304f.png">
 
-#### Loss function
+### Loss function
 - 어떤 데이터를 가지고 어떤 결과를 얻고 싶은지에 따라 사용되는게 다름
 <img width="600" alt="image" src="https://user-images.githubusercontent.com/93971443/193744905-f72af12d-1cce-439d-a630-e684dd545aaf.png">
 
