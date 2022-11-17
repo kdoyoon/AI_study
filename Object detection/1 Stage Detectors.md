@@ -128,6 +128,8 @@
 - Image net data : COCO data = 4 : 1로 구성
 - 계층적인 트리구조(Word Tree 구성)
 
+<img width="537" alt="image" src="https://user-images.githubusercontent.com/93971443/202462647-bd98f4a6-c9e2-4d0c-91c9-6b00ba080df6.png">
+
 * * * 
 ## YOLO V3
 - Darknet-53사용
@@ -143,6 +145,4 @@
 
 
 ### ※ 위 내용 및 이미지는 네이버 부스트캠프 교육 자료를 참고하였습니다.
-
-<img width="337" alt="image" src="https://user-images.githubusercontent.com/93971443/202462647-bd98f4a6-c9e2-4d0c-91c9-6b00ba080df6.png">
 
