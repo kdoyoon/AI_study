@@ -76,8 +76,73 @@
 
 #### Network
 - backbone : VGG16 + extra conv layer
-<img width="611" alt="image" src="https://user-images.githubusercontent.com/93971443/202368411-fa37a134-6933-4cdf-8306-fec308a53019.png">
+<img width="691" alt="image" src="https://user-images.githubusercontent.com/93971443/202368411-fa37a134-6933-4cdf-8306-fec308a53019.png">
 
 #### Multi-scale feature maps
+- 각 feature map에 대해 여러 scale의 anchor box를 생성
+- anchor box의 개수 구하기는 다음 과정을 통해 진행
 
+<img width="832" alt="image" src="https://user-images.githubusercontent.com/93971443/202455914-27a3bb61-a4b6-430e-81e1-d26a08b26d4e.png">
+
+- 6개의 box 좌표와 각 class score로 이루어짐
+<img width="741" alt="image" src="https://user-images.githubusercontent.com/93971443/202458656-77486e82-97a9-4d91-b677-baed795f2881.png">
+
+- 총 8732개의 anchor box 가짐
+<img width="622" alt="image" src="https://user-images.githubusercontent.com/93971443/202459099-19df5c04-9059-4f72-bd68-2bbbc7f7ee8d.png">
+
+#### Training
+- Hard Negative mining
+- Non maximum suppression 진행
+##### Loss
+<img width="723" alt="image" src="https://user-images.githubusercontent.com/93971443/202459393-10754087-b187-4efe-a1be-6380af6dc0b8.png">
+
+
+* * *
+
+## YOLO V2
+
+- Better(정확도), Faster(속도), Stronger(더 많은 class 예측) 3가지 파트에서 model 향상을 꾀함
+
+#### Better
+- Batch Norm 적용
+- High resolution classifier 사용
+  - v1에선 224$\times$224 이미지로 사전 학습된 VGG를 448$\times$448 detection task 진행
+  - v2에선 448$\times$448 이미지로 새로 fine-tuning 진행
+- Conv with anchor boxes
+  - fc layer 제거
+  - anchor box 도입
+  - K-means clusters on COCO datasets
+  - 좌표 값 대신 offset 예측하는 문제가 단순하고 학습하기 쉬움
+- Fine-grained features
+  - FPN 구조 사용 (low level/high level 섞어줌)
+- MUlti scale training
+
+#### Faster
+- backbone 모델 GoogLeNet->Darknet-19로 변경
+  - darknet for detection
+    - 마지막 fc layer 제거 -> 3$\times$3 conv layer로 대체
+    - 1$\times$1 conv layer 추가
+
+#### Stronger
+- Classification 데이터셋(image net), detection 데이터셋(COCO dataset) 함께 사용
+- Image net data : COCO data = 4 : 1로 구성
+- 계층적인 트리구조(Word Tree 구성)
+
+* * * 
+## YOLO V3
+- Darknet-53사용
+  - skip connection 적용
+  - conv stride 2 사용
+  - max pooling 사용X
+
+- Multi-scale Feature maps(=FPN 사용)
+  - 서로 다른 3개의 scale 사용
+  - FPN 사용   
+
+
+
+
+### ※ 위 내용 및 이미지는 네이버 부스트캠프 교육 자료를 참고하였습니다.
+
+<img width="337" alt="image" src="https://user-images.githubusercontent.com/93971443/202462647-bd98f4a6-c9e2-4d0c-91c9-6b00ba080df6.png">
 
