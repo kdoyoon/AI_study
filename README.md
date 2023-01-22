@@ -10,4 +10,3 @@
 |6주차| CV기초대회 | 이미지 분류 task|
 |7주차| CV기초대회 | 이미지 분류 task|
 |8주차| AI 서비스 기초 | level 1 종료 |
-|9주차| Object Detection 대회 |level 2 시작|
